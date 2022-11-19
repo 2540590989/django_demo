@@ -5,5 +5,10 @@ git commit -m “说明提交信息”//将暂存区的文件交给git管理
 git push https://github.com/2540590989/django_demo.git 将本地仓库提交到远程仓库
 
 可以通过git remote add 远程仓库地址别名 远程仓库地址 这一命令来给远程仓库命名，再提交时不用写很长的地址了。
-eg：git remote add origin https://github.com/2540590989/django_demo.git
-后就可以 git push origin master
+eg：git remote add origin1 https://github.com/2540590989/django_demo.git
+后就可以 git push origin1 master
+
+现在不想写git push origin1 master那么长
+就只想写git push
+git push -u 远程仓库地址别名 分支名称 eg：“git push -u origin1 master”
+-u 记住推送地址及分支，下次推送只需要输入git push即可
