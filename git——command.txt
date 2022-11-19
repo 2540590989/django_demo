@@ -1,0 +1,4 @@
+git init 创建本地仓库
+git status查看仓库中的文件状态
+git add . 将本文件夹中所有未管理的文件添加到暂存区
+git commit -m “说明提交信息”//将暂存区的文件交给git管理
