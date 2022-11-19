@@ -12,3 +12,59 @@ eg：git remote add origin1 https://github.com/2540590989/django_demo.git
 就只想写git push
 git push -u 远程仓库地址别名 分支名称 eg：“git push -u origin1 master”
 -u 记住推送地址及分支，下次推送只需要输入git push即可
+
+
+Microsoft Windows [版本 10.0.19045.2311]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\PycharmProjects\GitTest>git clone https://github.com/2540590989/django_demo.git
+Cloning into 'django_demo'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 10 (delta 2), reused 9 (delta 1), pack-reused 0
+Receiving objects: 100% (10/10), done.
+Resolving deltas: 100% (2/2), done.
+
+D:\PycharmProjects\GitTest>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+D:\PycharmProjects\GitTest>cd django_demo
+
+D:\PycharmProjects\GitTest\django_demo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\PycharmProjects\GitTest\django_demo>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+D:\PycharmProjects\GitTest\django_demo>git add .
+
+D:\PycharmProjects\GitTest\django_demo>git commit -m "改动index.html"
+[master 9215781] 改动index.html
+ 1 file changed, 1 insertion(+)
+
+D:\PycharmProjects\GitTest\django_demo>git remote add origin1 https://github.com/2540590989/django_demo.git
+
+D:\PycharmProjects\GitTest\django_demo>git push origin1 master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 150.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2540590989/django_demo.git
+   8239d14..9215781  master -> master
+
+D:\PycharmProjects\GitTest\django_demo>
